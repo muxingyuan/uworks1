@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>uworks</title>
+		
+		<style TYPE="text/css">
+			/*@import url("03 css style.css");*/
+			div{width: 100px; height: 100px; background: pink;}
+			h1{
+				background: red;
+			}
+			.title{
+				background: green;
+			}
+			.class1{
+				color: blue;
+			}
+			
+			.class2{
+				color: yellow;
+			}
+			
+			
+			.class3 .title{
+				color: blue;
+			}
+			
+			.class4 .title{
+				color: yellow;
+			}
+			
+			#view1{
+				width: 100px;
+				height: 100px;
+				background: green;
+			}
+			
+			#view2{
+				width: 100px;
+				height: 100px;
+				background: lightblue;
+			}
+			
+			a:link{
+				color: black;
+			}
+			
+			a:visited{
+				color: blue;
+			}
+			
+			a:hover{
+				color: yellowgreen;
+			}
+			
+			a:active{
+				color: red;
+			}
+			
+			
+		</style>
+		
+		<!-- <link rel="stylesheet" href="03 css style.css" -->
+	</head>
+	
+	<body>
+		<!-- direct, internal, external -->
+		
+		<!-- direct -->
+		<div style="width: 100px; height: 100px; background: red"> hello world </div>
+		
+		<!-- internal note -->
+		<div>hello world internal</div>
+		
+		<!-- external file 
+		style label @import
+		link label
+		order of loading: link: load at the sametime with html; @import load html first then load css
+		DOM: @import not working
+		-->
+		<div>hello world external file</div>
+		
+		<!-- class alias -->
+		<h1 class="class1">HTML Basics</h1>
+		<h1 class="class2">CSS Basics</h1>
+		<h1 class="class1">JavaScript Basics</h1>
+
+		<!-- ID -->
+		<h1 class="class1" id="view1">HTML Basics</h1>
+		<h1 class="class2" id="view2">CSS Basics</h1>
+		
+		<!-- hiarachical class -->
+		<h1 class="class3">
+			<p class="title">Hiarachical Class3</p>
+		</h1>
+		<h1 class="class4">
+			<p class="title">Hiarachical Class4</p>
+		</h1>
+		
+		<!-- false class -->
+		<a href="https://www.baidu.com">百度一下</a>
+		
+		<!-- wildcard : useful for reset style-->
+		
+		<!-- priority rule:		 -->
+		
+	</body>
+</html>

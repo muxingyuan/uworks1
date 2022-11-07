@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>uworks</title>
+		
+		<!-- weight rule:
+		sum of all weights applied
+		
+		label: 0001
+		class: 0010
+		false class: 0010
+		id: 0100
+		
+		direct style: 1000
+		 
+		 -->
+		<style type="text/css">
+			div{
+			width: 100px;
+			height: 100px;
+			background: red;
+			
+			}
+			
+			#head{
+				background: purple;
+			}
+			
+			.view{
+				background: blue;
+			}
+			
+			/*0010*/
+			.title{
+				color: while;
+			}
+			
+			/* 0010 + 0010 = 0020*/
+			.view1 .title{
+				color: blue;
+			}
+			
+			/* 0001 + 0010 = 0011*/
+			div .title{
+				color: purple
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="view" id="head">
+			
+		</div>
+		
+		<div class="view1">
+			<p class="title" style="color: black;">html</p>
+		</div>
+			
+	</body>
+
+</html>
