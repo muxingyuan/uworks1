@@ -1,0 +1,89 @@
+/*reset style*/
+*{
+	margin: 0;
+	padding: 0;
+}
+#header{
+	width: 999px;
+	height: 100px;
+	background: white;
+	margin: 0 auto;
+}
+#header .logo{
+	width: 249px;
+	height: 60px;
+	background: floralwhite;
+	float: left;
+	margin: 20px 0px; 31px;
+	text-align: center;
+	
+	color: darkorange;
+	font-size: 30px; /*default: 16px;*/
+	font-family: Cursive;
+	font-weight: bold;
+	/*font-variant: small-caps;*//*all-small-caps;small-caps;*/
+	line-height: 2em;
+	
+	text-decoration: none;
+}
+#header .logo a:link{
+	color: darkorange;
+	text-decoration: none;
+}
+#header .logo a:visited{
+	color: darkorange;
+	text-decoration: none;
+}
+#header .logo a:hover{
+	color: gold;
+	text-decoration: none;
+}
+#header .logo a:activate{
+	color: black;
+	text-decoration: none;
+}
+#header .search{
+	width: 249px;
+	height: 31px;
+	background: blue;
+	float: right;
+	margin: 39px 0px; 31px;
+	
+}
+#header .lang{
+	width: 249px;
+	height: 31px;
+	background: green;
+	float: right;
+	margin: 39px 20px; 31px;
+}
+
+#nav{
+	width: 999px;
+	height: 60px;
+	background: blue;
+	margin: 0 auto;
+	}
+
+#promo{
+	width: 999px;
+	height: 464px;
+	background: purple;
+	margin: 0 auto;
+}
+
+#testimony{
+	width: 999px;
+	height: 547px;
+	background: green;
+	margin: 0 auto;
+	
+}
+
+#footer{
+	width: 999px;
+	height: 332px;
+	background: grey;
+	margin: 0 auto;
+	
+}
