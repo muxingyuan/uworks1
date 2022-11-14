@@ -45,10 +45,27 @@
 #header .search{
 	width: 249px;
 	height: 31px;
-	background: blue;
+	background: #f1f1f1;
 	float: right;
 	margin: 39px 0px; 31px;
+	border: 1px solid gray;
 	
+}
+#header .search .text{
+	width: 188px;
+	height: 29px;
+	background: #f1f1f1;
+	font-size: 10px;
+	float: left;
+	padding-left: 16px;
+	border: none;
+}
+#header .search .bt{
+	width: 43px;
+	height: 31px;
+	background: url(../img/bt_search.jpg) no-repeat left center;
+	float: right;
+	border: none;
 }
 #header .lang{
 	width: 249px;
