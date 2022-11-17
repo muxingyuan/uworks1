@@ -47,7 +47,7 @@
 	height: 31px;
 	background: #f1f1f1;
 	float: right;
-	margin: 39px 0px; 31px;
+	margin: 39px 0px 31px;
 	border: 1px solid gray;
 	
 }
@@ -68,13 +68,48 @@
 	border: none;
 }
 #header .lang{
-	width: 249px;
+	width: 186px;
 	height: 31px;
-	background: green;
+	background: white;
 	float: right;
-	margin: 39px 20px; 31px;
-}
+	margin: 41px 20px 37px 0px;
+	text-align: center;
 
+	font-size: 15px; /*default: 16px;*/
+	/*font-family: Cursive;*/
+	font-weight: bold;
+	/*font-variant: small-caps;*//*all-small-caps;small-caps;*/
+	line-height: 2em;
+	
+	text-decoration: none;
+}
+#header .lang a{
+	width: 120px;
+	height: 31px;
+	background: #f1f1f1;
+	padding: 6px 20px;
+	border-color: lightgray;
+	border-width: 2px;
+	border-style: solid;
+	
+}
+#header .lang a:link{
+	color: gray;
+	text-decoration: none;
+}
+#header .lang a:visited{
+	color: gray;
+	text-decoration: none;
+}
+#header .lang a:hover{
+	color: black;
+	text-decoration: none;
+	background-color: darkgray;
+}
+#header .lang a:activate{
+	color: black;
+	text-decoration: none;
+}
 #nav{
 	width: 999px;
 	height: 60px;
