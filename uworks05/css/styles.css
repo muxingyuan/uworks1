@@ -47,7 +47,7 @@
 	height: 31px;
 	background: #f1f1f1;
 	float: right;
-	margin: 39px 0px 31px;
+	margin: 38px 0px 29px;
 	border: 1px solid gray;
 	
 }
@@ -61,9 +61,9 @@
 	border: none;
 }
 #header .search .bt{
-	width: 43px;
+	width: 31px;
 	height: 31px;
-	background: url(../img/bt_search.jpg) no-repeat left center;
+	background: url(../img/searchbt.png) no-repeat left center;
 	float: right;
 	border: none;
 }
@@ -72,7 +72,7 @@
 	height: 31px;
 	background: white;
 	float: right;
-	margin: 41px 20px 37px 0px;
+	margin: 39px 20px 30px 0px;
 	text-align: center;
 
 	font-size: 15px; /*default: 16px;*/
@@ -113,10 +113,27 @@
 #nav{
 	width: 999px;
 	height: 60px;
-	background: blue;
+	background: white;
 	margin: 0 auto;
 	}
-
+#nav ul{
+	padding-left: 20px;
+}
+#nav ul li{
+	width: 240px;
+	height: 60px;
+	background: white;
+	text-align: center;
+	list-style: none;
+	float: left;
+}
+#nav ul li a{
+	line-height: 60px;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	color: darkslategray;
+}
 #promo{
 	width: 999px;
 	height: 464px;
