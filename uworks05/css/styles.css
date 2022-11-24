@@ -14,7 +14,7 @@
 	height: 60px;
 	background: floralwhite;
 	float: left;
-	margin: 20px 0px; 31px;
+	margin: 20px 0px 0px 0px;
 	text-align: center;
 	
 	color: darkorange;
@@ -137,22 +137,51 @@
 #promo{
 	width: 999px;
 	height: 464px;
-	background: purple;
+	background: lightgrey;
 	margin: 0 auto;
+}
+#promo img{
+	object-fit: contain;
 }
 
 #testimony{
 	width: 999px;
 	height: 547px;
-	background: green;
+	background: white;
 	margin: 0 auto;
-	
 }
-
+#testimony h3{
+	height: 64px;
+	padding-top: 20px;
+	line-height: 54px;
+	font-size: 20px;
+	font-family: Tahoma;
+	text-align: center;
+	color: darkslategray;
+}
+#testimony ul li{
+	width: 959px;
+	list-style-position: inside;
+	list-style-type: disc;
+	line-height: 25px;
+	padding: 2px 20px;
+}
+#testimony ul li a{
+	text-decoration: none;
+	color: #5c5c5c;
+}
+#testimony ul li span{
+	float: right;
+	color: #aeaeae;
+}
 #footer{
 	width: 999px;
 	height: 332px;
 	background: grey;
 	margin: 0 auto;
+	border-bottom-color: black;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	margin-bottom: 10px;
 	
 }
