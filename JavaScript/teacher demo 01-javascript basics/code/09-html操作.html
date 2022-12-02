@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	
+	<body>
+		<!--
+			功能: 有一个输入框，一个按钮，点击按钮，输出 "hello" + 输入框中内容;
+		-->
+		
+		<!--
+			id="name"
+			属性名=属性值
+			
+			value="张三"
+			属性名=属性值
+		-->
+		<input type="text" placeholder="请输入您的名字" id="name" value="张三" />
+		<input type="button" value="输入完成" id="bt" />
+		
+		<script>
+			
+			// 1、获取元素
+			var oText = document.getElementById("name");
+			var oBt = document.getElementById("bt");
+			
+			
+			// 2、点击事件
+			oBt.onclick = function(){
+				// 按钮点击之后要做的事情
+				// alert(1);
+				
+				// 获取到输入框中的内容
+				// 读: 元素.属性名
+				alert( "hello " + oText.value );
+			}
+		</script>
+	</body>
+</html>

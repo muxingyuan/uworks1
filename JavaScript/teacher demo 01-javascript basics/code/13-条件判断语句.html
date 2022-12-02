@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	
+	<body>
+		<!--
+			输入成绩，判断等级:
+				90~100: A 优秀
+				80~89: B 良好
+				70~79： C 中上
+				60~69: D 中下
+				60以下: F 不及格
+		-->
+		
+		<input type="text" id="text" placeholder="输入成绩" />
+		<input type="button" value="等级" id="bt" />
+		
+		<script>
+			var oText = document.getElementById("text");
+			var oBt = document.getElementById("bt");
+			
+			oBt.onclick = function(){
+				/* 条件判断
+				 *
+				 * 语法: 
+				 * 		if(条件){
+				 * 			// 符合条件执行
+				 * 		}
+				 * 
+				 * 		if(条件){
+				 * 			// 符合条件执行
+				 * 		} else {
+				 * 			// 不符合条件执行
+				 * 		}
+				 * 
+				 * 		if(条件1){
+				 * 			// 符合条件1，执行
+				 * 		} else if(条件2){
+				 * 			// 符合条件2，执行
+				 * 		} else if(条件3){
+				 * 			// 符合条件3，执行
+				 * 		}
+				 * 		....
+				 * 		else {
+				 * 			// 都不符合上述条件，执行
+				 * 		}
+				 * 
+				 */
+				
+				// 获取到输入框中的内容，并转为number类型
+				var num = Number(oText.value);
+				
+				// 输入91
+//				if(num >= 90){
+//					alert("A")
+//				}
+//				
+//				if(num >= 80){
+//					alert("B")
+//				}
+//				
+//				if(num >= 70){
+//					alert("C")
+//				}
+//				
+//				if(num >= 60){
+//					alert("D")
+//				}
+//				
+//				if(num < 60){
+//					alert("F")
+//				}
+
+
+				if(num >= 90){
+					alert("A");
+				} else if(num >= 80){
+					alert("B");
+				} else if(num >= 70){
+					alert("C");
+				} else if(num >= 60){
+					alert("D");
+				} else {
+					alert("恭喜你，不及格");
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>06-html actions</title>
+	</head>
+	
+	<body>
+		<!--actions: input box, button, click on button content in box get output
+		-->
+		
+		<input type="text" placeholder="Please input your name" id="name" value="Sam" />
+		<input type="button" value="Input" id="bt" />
+		
+		<script>
+			//capture element
+			var oText = document.getElementById("name");
+			var oBt = document.getElementById("bt");
+			
+			//click event
+			oBt.onclick = function(){
+				//alert(1);
+				
+				//capture property of element
+				alert("hello " + oText.value);
+			}
+		</script>
+	</body>
+</html>

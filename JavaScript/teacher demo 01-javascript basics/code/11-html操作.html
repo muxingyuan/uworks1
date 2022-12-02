@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#bt1,#bt2{
+				font-size: 30px;
+				width: 30px;
+				height: 30px;
+				border: 1px solid gray;
+				line-height: 30px;
+				text-align: center;
+				float: left;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<!--
+			功能: 有一段文字，有两个按钮，一个加按钮，一个减按钮；
+		-->
+		
+		
+		<div id="bt1">+</div>
+		<div id="bt2">-</div>
+		
+		<br />
+		<br />
+		<br />
+		<!--<p id="content" style="font-size: 20px;">-->
+		<p id="content">
+			你可以不聪明，但你不可以不努力。
+		</p>
+		
+		
+		<script>
+			// 获取元素
+			var oText = document.getElementById("content");
+			var oBt1 = document.getElementById("bt1");
+			var oBt2 = document.getElementById("bt2");
+			
+			// 默认字体大小
+			var size = 16;
+			
+			// 加操作
+			oBt1.onclick = function(){
+				// alert(1);
+				
+				size = size + 1;
+				console.log(size);
+				
+				// 问题1: js中不能出现'-'
+				// 问题2: 注意有无单位
+				// font-size ==> fontSize
+				// padding-top ==> paddingTop
+				oText.style.fontSize = size + 'px';
+			}
+			
+			// 减操作
+			oBt2.onclick = function(){
+				// alert(2);
+				
+				size = size - 1;
+				console.log(size);
+				
+				oText.style.fontSize = size + 'px';
+			}
+			
+		</script>
+	</body>
+</html>

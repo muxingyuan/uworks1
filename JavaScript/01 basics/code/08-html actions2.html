@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>08-html actions2</title>
+		<style type="text/css">
+			#bt_bigger,#bt_smaller{
+				width: 30px;
+				height: 30px;
+				border: 1px solid gray;
+				line-height: 30px;
+				text-align: center;
+				float: left;
+				margin: 10px;
+				font-szie: 30px;
+				font-weight: bold;
+				
+			}
+		</style>
+	</head>
+	
+	<body>
+		<!--actions: a paragraph, button for text go bigger, button for text go smaller;
+		-->
+		
+		<p id="content">南有樛木 葛藟累之 乐只君子 福履绥之 
+		南有樛木 葛藟荒之 乐只君子 福履将之 
+		南有樛木 葛藟萦之 乐只君子 福履成之 
+		</p>
+		
+		<div id="bt_bigger">+</div>
+		<div id="bt_smaller">-</div>
+		
+		<script>
+			//capture element
+			var oText = document.getElementById("content");
+			var oBt1 = document.getElementById("bt_bigger");
+			var oBt2 = document.getElementById("bt_smaller");
+			
+			var size = 16;
+			
+			//click event
+			oBt1.onclick = function(){
+				//alert(1);
+				size = size + 2;
+				console.log(size);
+				oText.style.fontSize = size + 'px';
+			}
+			oBt2.onclick = function(){
+				//alert(2);
+				size = size - 2;
+				console.log(size);
+				oText.style.fontSize = size + 'px';
+			}
+			
+			//js "-" not allowed
+			//pay attention of unit
+			//font-size ===>>> fontSize
+			//padding-top ===>>> paddingTop
+			
+		</script>
+	</body>
+</html>

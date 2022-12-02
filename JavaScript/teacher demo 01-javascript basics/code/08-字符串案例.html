@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			ul{
+				width: 200px;
+				border: 1px solid gray;
+			}
+			a{
+				text-decoration: none;
+				color: black;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<!--<ul>
+			<li> <a href="#">北京</a> </li>
+			<li> <a href="#">上海</a> </li>
+			<li> <a href="#">广州</a> </li>
+			<li> <a href="#">深圳</a> </li>
+		</ul>-->
+		
+		<script>
+			var a = "北京";
+			var b = "上海";
+			var c = "广州";
+			var d = "深圳";
+			
+			var list = "";
+			
+			list = list + "<ul>";
+			
+			// 相同的引号(单/双)都不能嵌套
+			list = list + '<li> <a href="#">' + a + '</a> </li>';
+			list = list + '<li> <a href="#">' + b + '</a> </li>';
+			list = list + '<li> <a href="#">' + c + '</a> </li>';
+			list = list + '<li> <a href="#">' + d + '</a> </li>';
+			
+			list = list + "</ul>";
+			
+			// console.log(list);
+			document.write(list);
+			
+		</script>
+	</body>
+</html>

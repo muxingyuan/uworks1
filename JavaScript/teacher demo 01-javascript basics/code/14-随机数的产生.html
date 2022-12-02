@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	
+	<body>
+		<script>
+			document.onclick = function(){
+				// 1~100随机数
+				
+				// 0~1(不含0和1)
+				// alert( Math.random() );
+				
+				// 0~1 ==> 乘于100  ==>  0~100(不包含0和100)
+				// parseInt取整(向下取整)  
+				
+				// parseInt(Math.random()*100)  ==> 0~99 (包含0和99)
+				// 1~100随机数
+				alert( parseInt(Math.random()*100) + 1);
+			}
+		</script>
+	</body>
+</html>

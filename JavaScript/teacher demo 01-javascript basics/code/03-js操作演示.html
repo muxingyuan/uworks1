@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+				margin: 10px;
+			}
+			#box{
+				background: red;
+			}
+			#view{
+				background: blue;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="box"></div>
+		
+		<div id="view"></div>
+		
+		<script>
+			// 1、获取元素
+			var oBox = document.getElementById("box");
+			
+			// 2、点击操作
+			oBox.onclick = function(){
+				alert("hello wrold!");
+			}
+		</script>
+	</body>
+</html>

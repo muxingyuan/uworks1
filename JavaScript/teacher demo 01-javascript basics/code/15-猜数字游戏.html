@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			.box{
+				width: 200px;
+				height: 300px;
+				border: 1px solid gray;
+				text-align: center;
+				margin: 50px auto;
+			}
+			.title{
+				line-height: 40px;
+			}
+			.detail{
+				height: 50px;
+			}
+			#text{
+				width: 100px;
+				height: 50px;
+				font-size: 40px;
+				text-align: center;
+				margin-top: 10px;
+			}
+			#bt{
+				width: 100px;
+				height: 30px;
+				background: gray;
+				border: 0;
+				margin-top: 20px;
+				color: white;
+			}
+			#info{
+				margin-top: 20px;
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="box">
+			<h2 class="title">猜数字游戏</h2>
+			<p class="detail">现在已生成一个1~100的随机数，猜中有惊喜喔！</p>
+			<input type="text" id="text" placeholder="0" /><br />
+			<input type="button" value="竞猜" id="bt" />
+			<p id="info"> ..... </p>
+		</div>
+		
+		<script type="text/javascript">
+			// 获取元素
+			var oText = document.getElementById("text");
+			var oBt = document.getElementById("bt");
+			var oInfo = document.getElementById("info");
+			
+			// 产生随机数
+			var random = parseInt(Math.random()*100) + 1;
+			
+			// 点击操作
+			oBt.onclick = function(){
+				// = 赋值
+				// == 判断
+				if(oText.value == ""){	// 无内容
+					alert("请输入内容")
+				} else {		// 有内容
+					// 获取输入内容
+					var num = Number(oText.value);
+					
+					if(num>random){
+						oInfo.innerHTML = "大了";
+					} else if(num<random){
+						oInfo.innerHTML = "小了";
+					} else {
+						oInfo.innerHTML = "恭喜您中奖了!!"
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

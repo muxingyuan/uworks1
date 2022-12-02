@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	
+	<body>
+		<input type="text" id="text1" />
+		<input type="text" id="text2" />
+		<input type="button" value="加法" id="bt1" />
+		<input type="button" value="减法" id="bt2" />
+		<input type="button" value="乘法" id="bt3" />
+		<input type="button" value="除法" id="bt4" />
+		<input type="button" value="取余" id="bt5" />
+		
+		<script>
+			// 获取对应元素
+			var oText1 = document.getElementById("text1");
+			var oText2 = document.getElementById("text2");
+			var oBt1 = document.getElementById("bt1");
+			var oBt2 = document.getElementById("bt2");
+			var oBt3 = document.getElementById("bt3");
+			var oBt4 = document.getElementById("bt4");
+			var oBt5 = document.getElementById("bt5");
+			
+			
+			
+			// 加法
+			oBt1.onclick = function(){
+				// "10" "20"
+				
+				// 将字符串转为数字
+				var num1 = Number(oText1.value);
+				var num2 = Number(oText2.value);
+				
+				alert(num1 + num2);
+			}
+			
+			// 减法
+			oBt2.onclick = function(){
+				// 减法只能是数值操作，强制类型转换(自动将字符串转为数值)
+				alert(oText1.value - oText2.value);
+			}
+			
+			// 乘法
+			oBt3.onclick = function(){
+				alert(oText1.value * oText2.value);
+			}
+			
+			// 除法
+			oBt4.onclick = function(){
+				alert(oText1.value / oText2.value);
+			}
+			
+			// 取余
+			oBt5.onclick = function(){
+				alert(oText1.value % oText2.value);
+			}
+		</script>
+	</body>
+</html>
