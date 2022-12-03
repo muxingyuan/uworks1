@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>09-Assignment</title>
+		<style type="text/css">
+			.box{
+				width: 400px;
+				height: 100px;
+				border: 1px solid gray;
+				text-align: center;
+			}
+			.box1{
+				width: 400px;
+				height: 200px;
+				border: 1px solid gray;
+				text-align: center;
+			}
+			#text{
+				font-size: 25px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<!--a bingo game, meant to be 1~100, use 1~10 for testing ease.
+		-->
+		
+		<div class="box1">
+			<p>
+				<h3>Bingo Number</h3>
+				Please input a number 1 to 100:
+			</p>
+			<input type="text" id="input_text" value="0" />
+			<input type="button" id="bt1" value="submit" /> 
+		</div>
+		
+		<br /><br /><br />
+		
+		<div class="box">
+			<h3 id="text">  </h3>
+		</div>
+				
+		<script>
+			//capture element
+			var oInputText = document.getElementById("input_text");
+			var oBt1 = document.getElementById("bt1");
+			
+			var oResult = document.getElementById("text");
+			
+			
+			//click event
+			oBt1.onclick = function(){
+			var bingo = Number(oInputText.value);
+			//alert(bingo);
+			var question = parseInt(Math.random()*10+1);
+			//alert(question);
+            //alert(bingo+question);
+			if(bingo == question){
+				//alert(bingo+" vs "+question+" Bingo! You win!");
+				oResult.innerHTML=bingo+" vs "+question+" Bingo! You win!";
+			}
+			else if(bingo > question){
+				//alert(bingo+" vs "+question+" Your number is too big for this time!  Try again!");
+				oResult.innerHTML=bingo+" vs "+question+" Your number is too big for this time!  Try again!";
+			}
+			else {
+				//alert(bingo+" vs "+question+" Your number is too small for this time!  Try again!");
+				oResult.innerHTML=bingo+" vs "+question+" Your number is too small for this time!  Try again!";
+			}
+			}
+			
+		</script>
+	</body>
+</html>
