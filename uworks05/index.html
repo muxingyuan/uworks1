@@ -48,12 +48,42 @@
 	<!-- 2 navigation-->
 	<div id="nav">
 		<ul>
-			<li> <a href="#">Service</a> </li>
-			<li> <a href="#">Blog</a> </li>
-			<li> <a href="#">Forum</a> </li>
-			<li> <a href="#">Contact</a> </li>
+			<li id="service" class="active"> <a href="#">Service</a> </li>
+			<li id="blog"> <a href="#">Blog</a> </li>
+			<li id="forum"> <a href="#">Forum</a> </li>
+			<li id="contact"> <a href="#">Contact</a> </li>
 		</ul>
 	</div>
+	
+	<script type="text/javascript">
+		var oBt1=document.getElementById("service");
+		var oBt2=document.getElementById("blog");
+		var oBt3=document.getElementById("forum");
+		var oBt4=document.getElementById("contact");
+
+		var tempBt = oBt1;
+		
+		oBt1.onclick = function(){
+			tempBt.className = "";
+			tempBt = oBt1;
+			tempBt.className = "active";
+		}
+		oBt2.onclick = function(){
+			tempBt.className = "";
+			tempBt = oBt2;
+			tempBt.className = "active";
+		}
+		oBt3.onclick = function(){
+			tempBt.className = "";
+			tempBt = oBt3;
+			tempBt.className = "active";
+		}		
+		oBt4.onclick = function(){
+			tempBt.className = "";
+			tempBt = oBt4;
+			tempBt.className = "active";
+		}
+	</script>
 	
 	<!-- 3 promotion image with info-->
 	<div id="promo">
@@ -105,6 +135,8 @@
 		</div>
 		<div class="section3">Designed by Xingyuan Mu, powered by MicroSoft Azure.</div>
 	</div>
+	
+
 	
 	</body>
 

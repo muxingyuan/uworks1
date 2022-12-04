@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>02 name and data type</title>
+	</head>
+	<body>
+		<p>names: variable name, function name, property names, parameter names.</p>
+		<p>naming convention:
+		starting with letter of underscore;
+		following character can be letters, underscore, dollar sign or numbers;
+		can not use key words, reserved words, true, false, null as name.</p>
+		<p>key examples:
+		break, else new, "var",
+		case, finally, return, void,
+		catch, for, switch, while,
+		continue, function, this, with,
+		default, if, throw,
+		delete, in, try,
+		do, instandceof, typeof</p>
+		<p>reserved words examples:
+		abstract, enum, int, short,
+			boolean, export, interface, static,
+			byte, extends, long, super,
+			char, final, native, synchronized,
+			class, float, package, throws,
+			const, goto, private, transient,
+			debugger, implements, protected, volatile,
+			double, import, public
+		</p>
+				
+		<p><h3>Data Type</h3>
+			Number: including int and float<br />
+			boolean<br />String<br />Undefined: created but not initialized<br />Null<br />
+		
+		</p><h3>Data Type and returned value of typeof function </h3>
+		<table>
+		<!-- tr*7>td*2-->
+			<tr>
+				<td>Data Type</td>
+				<td>returned value of typeof</td>
+			</tr>
+			<tr>
+				<td>Number</td>
+				<td>Number</td>
+			</tr>
+			<tr>
+				<td>Boolean</td>
+				<td>Boolean</td>
+			</tr>
+			<tr>
+				<td>String</td>
+				<td>String</td>
+			</tr>
+			<tr>
+				<td>Undefined</td>
+				<td>Undefined</td>
+			</tr>
+			<tr>
+				<td>Object or Null</td>
+				<td>Object</td>
+			</tr>
+			<tr>
+				<td>Function</td>
+				<td>Function</td>
+			</tr>
+		</table>
+		</p>
+		
+		<script type="text/javascript">
+			var a=0.5;
+			alert(typeof a);
+			
+			var b="Hello world!";
+			alert(typeof b);
+		</script>
+	</body>
+</html>

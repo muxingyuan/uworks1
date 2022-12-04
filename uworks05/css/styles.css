@@ -134,6 +134,10 @@
 	font-weight: bold;
 	color: darkslategray;
 }
+#nav .active{
+	background: floralwhite;
+	color: darkorange;
+}
 #promo{
 	width: 999px;
 	height: 464px;

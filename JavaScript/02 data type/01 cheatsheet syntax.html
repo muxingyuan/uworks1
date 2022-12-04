@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>01 cheatsheet syntax</title>
+		<style type="text/css">
+			div{
+				/* w:300 */
+				width: 300px;
+				/* h:300 */
+				height: 300px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- hotkey of comments, it's a toggle: ctrl + / -->
+		
+		<!-- 1. > for parent/child tags-->
+		<!-- ul>li -->
+		<ul>
+			<li></li>
+		</ul>
+		
+		<!-- 2. + for same level elements -->
+		<!-- div>a+span -->
+		<div><a href=""></a><span></span></div>
+		
+		<!-- 3. * for multiplication of element -->
+		<!-- ul>li*5 -->
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<!-- ul>li>a+span*5 -->
+		<ul>
+			<li><a href=""></a><span></span><span></span><span></span><span></span><span></span></li>
+		</ul>
+		
+		<!-- 4.{} for content of element -->
+		<!-- ul>li>p{google for 1 question} make sure cursor is at end of line and press <tab> key on your keyboard-->
+		<ul>
+			<li>
+				<p>google for 1 question</p>
+			</li>
+		</ul>
+		
+		<!-- 5.[] for property of element -->
+		<!-- coding order: []{}* -->
+		<!-- a[href="#"]{google for a question}*3 -->
+		<a href="#">google for a question</a><a href="#">google for a question</a><a href="#">google for a question</a>
+		
+		<!-- 6.$ for ordered number in content of element -->
+		<!-- a[href="#"]{google for $ question} -->
+		<a href="#">google for 1 question</a><a href="#">google for 2 question</a><a href="#">google for 3 question</a><a href="#">google for 4 question</a><a href="#">google for 5 question</a>
+		
+		<!-- 7.$@ for change starting number -->
+		<!-- div>p{header $#5}*6 -->
+		<div>
+			<p>header 5</p>
+			<p>header 6</p>
+			<p>header 7</p>
+			<p>header 8</p>
+			<p>header 9</p>
+			<p>header 10</p>
+		</div>
+	</body>
+</html>
