@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>01 operators</title>
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+			//1. assignment
+			
+			//2. self-increment
+			// var i = 3;
+			// i = i + 1;
+			// alert(i);
+			
+			//3. i++ assignment first, increment later;
+			// ++i increment first, assignment later;
+			
+			// a = 10;
+			// alert(a);
+			// b = 6;
+			// alert(b);
+			//*****assignment AFTER other operations****//
+			//c = a++ + 6; //a=10, c=10+6, a=10+1
+			//alert(a);
+			//alert(c);
+			
+			//*****assignment BEFORE other operations****//
+			//d = ++a + 6; //a=10, a=10+1, d=11+6
+			// d = 6 + ++a;   //same
+			// alert(a);
+			// alert(d);
+			
+			//4. arithmetic + - * / %
+						
+			//5. comparison > >= < <= == != ===
+			var num1 = 3;
+			var num2 = 4;
+			var str1 = '3';
+			
+			if( num1 == str1){
+				alert("equal");
+			} else {
+				alert("not equal");
+			}
+			
+			///=== same value AND same type
+			if( num1 === str1){
+				alert("equal");
+			} else {
+				alert("not equal");
+			}
+			
+			//5. logic && || !
+			
+			
+			//6. short-cut ?
+			num1 < num2 ? alert("smaller") : alert("not smaller");
+			
+			
+		</script>
+		
+	</body>
+</html>
